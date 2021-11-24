@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+www.lalal.ai	TRUE	/	FALSE	1999999999	csrftoken	uKKft0RUEWgNgTRBlGdubYZbLZT89cB9Bgym6FMTJ6lEaw3Ck5VmXicwbZeV2Rxo
+www.lalal.ai	TRUE	/	FALSE	1999999999	SameSite	Lax
+

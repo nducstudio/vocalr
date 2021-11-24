@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.lalal.ai/blog/audio-processing-filter/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Nov 2021 15:56:12 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>New Audio Filter for Superior Stem Separation</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="../assets/built/screen48eb.css?v=1aa0b9f421" />
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '../../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WK8GK2W');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta name="description" content="LALAL.AI, the next-generation stem splitter, added a new audio processing filter setting that allows for flexible results and cleaner track separation." />
+    <link rel="icon" href="../favicon.png" type="image/png" />
+    <link rel="canonical" href="index.html" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <link rel="amphtml" href="https://lalal.ai/blog/audio-processing-filter/amp/" />
+    
+    <meta property="og:site_name" content="LALAL.AI" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="New Audio Filter for Superior Stem Separation" />
+    <meta property="og:description" content="With the help of the new filter, you can adjust the audio processing intensity to your own preference. Here is all about it and how to use it." />
+    <meta property="og:url" content="https://lalal.ai/blog/audio-processing-filter/" />
+    <meta property="og:image" content="https://sblog.lalal.ai/ghost/2021/01/1_rPiqpMjyvudP3BOlcEpWdA--1--1.png" />
+    <meta property="article:published_time" content="2021-01-24T02:27:24.000Z" />
+    <meta property="article:modified_time" content="2021-01-25T01:51:32.000Z" />
+    <meta property="article:tag" content="New Feature" />
+    
+    <meta property="article:publisher" content="https://www.facebook.com/ghost" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="New Audio Filter for Superior Stem Separation" />
+    <meta name="twitter:description" content="With the help of the new filter, you can adjust the audio processing intensity to your own preference. Here is all about it and how to use it." />
+    <meta name="twitter:url" content="https://lalal.ai/blog/audio-processing-filter/" />
+    <meta name="twitter:image" content="https://sblog.lalal.ai/ghost/2021/01/1_rPiqpMjyvudP3BOlcEpWdA--1--1.png" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="Oksana" />
+    <meta name="twitter:label2" content="Filed under" />
+    <meta name="twitter:data2" content="New Feature" />
+    <meta name="twitter:site" content="@ghost" />
+    <meta property="og:image:width" content="2696" />
+    <meta property="og:image:height" content="1400" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "LALAL.AI",
+        "url": "https://lalal.ai/blog/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://sblog.lalal.ai/ghost/2021/01/Frame-4-1.png"
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Oksana",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://sblog.lalal.ai/ghost/2021/11/circle-cropped.png",
+            "width": 850,
+            "height": 850
+        },
+        "url": "https://lalal.ai/blog/author/oks/",
+        "sameAs": []
+    },
+    "headline": "New Audio Filter for Superior Stem Separation",
+    "url": "https://lalal.ai/blog/audio-processing-filter/",
+    "datePublished": "2021-01-24T02:27:24.000Z",
+    "dateModified": "2021-01-25T01:51:32.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://sblog.lalal.ai/ghost/2021/01/1_rPiqpMjyvudP3BOlcEpWdA--1--1.png",
+        "width": 2696,
+        "height": 1400
+    },
+    "keywords": "New Feature",
+    "description": "With the help of the new filter, you can adjust the audio processing intensity to your own preference. Here is all about it and how to use it.",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://lalal.ai/blog/"
+    }
+}
+    </script>
+
+    <meta name="generator" content="Ghost 3.42" />
+    <link rel="alternate" type="application/rss+xml" title="LALAL.AI" href="https://lalal.ai/blog/rss/" />
+
+</head>
+<body class="post-template tag-new-feature">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WK8GK2W"
+    height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="site-wrapper">
+
+        
+
+<header class="site-header">
+    <div class="outer site-nav-main">
+    <div class="inner">
+        <nav class="site-nav">
+    <div class="site-nav-left-wrapper">
+        <div class="site-nav-left">
+                <a class="site-nav-logo" href="https://lalal.ai/blog"><img src="../../../sblog.lalal.ai/ghost/2021/01/Frame-4-1.html" alt="LALAL.AI" /></a>
+            <div class="site-nav-content">
+                    <ul class="nav">
+    <li class="nav-get-started"><a href="../../index.html">Get Started</a></li>
+</ul>
+
+                    <span class="nav-post-title ">New Audio Filter for Superior Stem Splitting</span>
+            </div>
+        </div>
+    </div>
+    <div class="site-nav-right">
+            <ul class="nav">
+    <li class="nav-facebook"><a href="https://www.facebook.com/Lalalai-106143107757872/">Facebook</a></li>
+    <li class="nav-twitter"><a href="https://twitter.com/ai_lalal">Twitter</a></li>
+    <li class="nav-instagram"><a href="https://www.instagram.com/lalalaiapp/">Instagram</a></li>
+    <li class="nav-tiktok"><a href="https://www.tiktok.com/@lalal.ai?">Tiktok</a></li>
+    <li class="nav-youtube"><a href="https://www.youtube.com/channel/UCawy7BDDJ62QwQeeRjYmEtQ">YouTube</a></li>
+</ul>
+
+
+    </div>
+</nav>
+    </div>
+</div></header>
+
+
+<main id="site-main" class="site-main outer">
+    <div class="inner">
+
+        <article class="post-full post tag-new-feature ">
+
+            <header class="post-full-header">
+
+                <section class="post-full-tags">
+                    <a href="../tag/new-feature/index.html">New Feature</a>
+                </section>
+
+                <h1 class="post-full-title">New Audio Filter for Superior Stem Splitting</h1>
+
+                <p class="post-full-custom-excerpt">With the help of the new filter, you can adjust the audio processing intensity to your own preference. Here is all about it and how to use it.</p>
+
+                <div class="post-full-byline">
+
+                    <section class="post-full-byline-content">
+
+                        <ul class="author-list">
+                            <li class="author-list-item">
+
+                                <div class="author-card">
+                                    <img class="author-profile-image" src="../../../sblog.lalal.ai/ghost/2021/11/circle-cropped.html" alt="Oksana" />
+                                    <div class="author-info">
+                                        <h2>Oksana</h2>
+                                        <p>Read <a href="../author/oks/index.html">more posts</a> by this author.</p>
+                                    </div>
+                                </div>
+
+                                <a href="../author/oks/index.html" class="author-avatar">
+                                    <img class="author-profile-image" src="../../../sblog.lalal.ai/ghost/2021/11/circle-cropped.html" alt="Oksana" />
+                                </a>
+
+                            </li>
+                        </ul>
+
+                        <section class="post-full-byline-meta">
+                            <h4 class="author-name"><a href="../author/oks/index.html">Oksana</a></h4>
+                            <div class="byline-meta-content">
+                                <time class="byline-meta-date" datetime="2021-01-24">24 Jan 2021</time>
+                                <span class="byline-reading-time"><span class="bull">&bull;</span> 2 min read</span>
+                            </div>
+                        </section>
+
+                    </section>
+
+
+                </div>
+            </header>
+
+            <figure class="post-full-image">
+                <img
+                    srcset="https://sblog.lalal.ai/ghost/2021/01/1_rPiqpMjyvudP3BOlcEpWdA--1--1.png 300w,
+                            https://sblog.lalal.ai/ghost/2021/01/1_rPiqpMjyvudP3BOlcEpWdA--1--1.png 600w,
+                            https://sblog.lalal.ai/ghost/2021/01/1_rPiqpMjyvudP3BOlcEpWdA--1--1.png 1000w,
+                            https://sblog.lalal.ai/ghost/2021/01/1_rPiqpMjyvudP3BOlcEpWdA--1--1.png 2000w"
+                    sizes="(max-width: 800px) 400px,
+                        (max-width: 1170px) 1170px,
+                            2000px"
+                    src="../../../sblog.lalal.ai/ghost/2021/01/1_rPiqpMjyvudP3BOlcEpWdA--1--1.html"
+                    alt="New Audio Filter for Superior Stem Splitting"
+                />
+            </figure>
+
+            <section class="post-full-content">
+                <div class="post-content">
+                    <p><a href="../../index.html">LALAL.AI</a> has joined the music source separation game just recently but there’s no time to twiddle thumbs! We are ready to take user experience up a notch and improve the stem splitting results with the implementation of a new filter for audio processing.</p><h1 id="why-it-s-needed">Why It’s Needed</h1><p>Music recordings are usually a mixture of several audio tracks (also known as stems), most commonly vocal and instrumental tracks. The main task of Lalal.ai and any other source isolation service is to precisely extract each stem. It’s quite challenging as mixed tracks often contain various sound engineering peculiarities and mastering errors that don’t become apparent until the stems are separated.</p><p>The usage of next-gen technologies (like neural networks) alone is not enough to accurately recover vocal and instrumental tracks. In order to reduce the amount of audible distortions, the application of different sound processing techniques is also required.</p><p>Since sound perception is relative — the same track may sound differently depending on a device and listener. The same person may even have contrasting experiences listening to the same track from different headphones or speakers.</p><p>Due to these factors, we couldn’t enhance the precision of individual stems produced by Lalal.ai with only internal changes. We needed to give our users the freedom to choose the sound processing filter that makes for the cleanest source separation as seen (or rather <em><em>heard</em></em>) from their own perspective.</p><h1 id="how-it-works">How It Works</h1><p>The new <strong><strong>Processing</strong></strong> filter has three levels: Mild, Normal, and Aggressive.</p><p><strong><strong>Mild</strong></strong> is the minimum processing level. You can hear both the errors of the original track and the interpenetration of the separated tracks.</p><p><strong><strong>Normal</strong></strong> is the default processing level, with moderate filtration applied. Most of the errors are corrected but some tracks may contain artificial elements and high frequencies blurring.</p><p><strong><strong>Aggressive</strong></strong> is the maximum processing level. The filtering algorithms react to possible errors in the most sensitive way. It may result in some tracks’ natural mixing peculiarities being perceived as errors and thus removed. This level of processing can lead to even more noticeable artifacts.</p><p>Take control over the sound processing the following way:</p><ol><li>Head over to <a href="../../index.html" rel="noopener nofollow"><strong><strong>Lalal.ai</strong></strong></a>.</li><li>Select the filtration level at the <strong><strong>Processing </strong></strong>section.</li><li>Upload a track from your computer.</li><li>Wait a few moments until the track is processed.</li><li>Playback or download the separated stems.</li></ol><p>Select another processing filter option if needed until you get the cleanest results. Enjoy!</p>
+                </div>
+            </section>
+
+
+
+        </article>
+
+    </div>
+</main>
+
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+                <article class="read-next-card">
+                    <header class="read-next-card-header">
+                        <h3><span>More in</span> <a href="../tag/new-feature/index.html">New Feature</a></h3>
+                    </header>
+                    <div class="read-next-card-content">
+                        <ul>
+                            <li>
+                                <h4><a href="../lalal-ai-adds-the-8th-stem-for-separation-synthesizer/index.html">LALAL.AI Adds the 8th Stem for Separation: Synthesizer</a></h4>
+                                <div class="read-next-card-meta">
+                                    <p><time datetime="2021-11-19">19 Nov 2021</time> –
+                                        1 min read</p>
+                                </div>
+                            </li>
+                            <li>
+                                <h4><a href="../extract-electric-and-acoustic-guitar-from-any-audio/index.html">Extract Electric and Acoustic Guitars from Any Audio</a></h4>
+                                <div class="read-next-card-meta">
+                                    <p><time datetime="2021-09-14">14 Sep 2021</time> –
+                                        1 min read</p>
+                                </div>
+                            </li>
+                            <li>
+                                <h4><a href="../isolate-drums-in-songs-and-video-clips-with-lalal-ai/index.html">Isolate Drums, Bass, and Piano Tracks with LALAL.AI</a></h4>
+                                <div class="read-next-card-meta">
+                                    <p><time datetime="2021-09-01">1 Sep 2021</time> –
+                                        2 min read</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <footer class="read-next-card-footer">
+                        <a href="../tag/new-feature/index.html">See all 5 posts
+                            →</a>
+                    </footer>
+                </article>
+
+                <article class="post-card post tag-new-pricing-options ">
+
+    <a class="post-card-image-link" href="../creator-packages/index.html">
+        <img class="post-card-image"
+            srcset="https://sblog.lalal.ai/ghost/2021/01/1_q3SmamTsCi1pRGeEDQramg-1.png 300w,
+                    https://sblog.lalal.ai/ghost/2021/01/1_q3SmamTsCi1pRGeEDQramg-1.png 600w,
+                    https://sblog.lalal.ai/ghost/2021/01/1_q3SmamTsCi1pRGeEDQramg-1.png 1000w,
+                    https://sblog.lalal.ai/ghost/2021/01/1_q3SmamTsCi1pRGeEDQramg-1.png 2000w"
+            sizes="(max-width: 1000px) 400px, 700px"
+            loading="lazy"
+            src="../../../sblog.lalal.ai/ghost/2021/01/1_q3SmamTsCi1pRGeEDQramg-1.html"
+            alt="Paid Creator Packages for Higher Data Volumes"
+        />
+    </a>
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="../creator-packages/index.html">
+
+            <header class="post-card-header">
+                    <div class="post-card-primary-tag">New Pricing Options</div>
+                <h2 class="post-card-title">Paid Creator Packages for Higher Data Volumes</h2>
+            </header>
+
+            <section class="post-card-excerpt">
+                    <p>Removed track duration limit, increased upload file size, and three new creator packages to help you split more audio.</p>
+            </section>
+
+        </a>
+
+        <footer class="post-card-meta">
+            <ul class="author-list">
+                <li class="author-list-item">
+            
+                    <div class="author-name-tooltip">
+                        Oksana
+                    </div>
+            
+                    <a href="../author/oks/index.html" class="static-avatar">
+                        <img class="author-profile-image" src="../../../sblog.lalal.ai/ghost/2021/11/circle-cropped.html" alt="Oksana" />
+                    </a>
+                </li>
+            </ul>
+            <div class="post-card-byline-content">
+                <span><a href="../author/oks/index.html">Oksana</a></span>
+                <span class="post-card-byline-date"><time datetime="2021-01-24">24 Jan 2021</time> <span class="bull">&bull;</span> 2 min read</span>
+            </div>
+        </footer>
+
+    </div>
+
+</article>
+
+                <article class="post-card post tag-quality-test ">
+
+    <a class="post-card-image-link" href="../lalal-ai-vs-spleeter-quality-comparison-test/index.html">
+        <img class="post-card-image"
+            srcset="https://sblog.lalal.ai/ghost/2021/01/1_k7a3PHu1eUcVyQbf5wo_8w-1.png 300w,
+                    https://sblog.lalal.ai/ghost/2021/01/1_k7a3PHu1eUcVyQbf5wo_8w-1.png 600w,
+                    https://sblog.lalal.ai/ghost/2021/01/1_k7a3PHu1eUcVyQbf5wo_8w-1.png 1000w,
+                    https://sblog.lalal.ai/ghost/2021/01/1_k7a3PHu1eUcVyQbf5wo_8w-1.png 2000w"
+            sizes="(max-width: 1000px) 400px, 700px"
+            loading="lazy"
+            src="../../../sblog.lalal.ai/ghost/2021/01/1_k7a3PHu1eUcVyQbf5wo_8w-1.html"
+            alt="LALAL.AI vs. Spleeter: Stem Separation Quality Comparison"
+        />
+    </a>
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="../lalal-ai-vs-spleeter-quality-comparison-test/index.html">
+
+            <header class="post-card-header">
+                    <div class="post-card-primary-tag">Quality Test</div>
+                <h2 class="post-card-title">LALAL.AI vs. Spleeter: Stem Separation Quality Comparison</h2>
+            </header>
+
+            <section class="post-card-excerpt">
+                    <p>LALAL.AI provides better stem separation than Spleeter, the renowned service by Deezer. To substantiate this statement, we publish our in-depth comparison report of the two AI-powered audio splitters.</p>
+            </section>
+
+        </a>
+
+        <footer class="post-card-meta">
+            <ul class="author-list">
+                <li class="author-list-item">
+            
+                    <div class="author-name-tooltip">
+                        Oksana
+                    </div>
+            
+                    <a href="../author/oks/index.html" class="static-avatar">
+                        <img class="author-profile-image" src="../../../sblog.lalal.ai/ghost/2021/11/circle-cropped.html" alt="Oksana" />
+                    </a>
+                </li>
+            </ul>
+            <div class="post-card-byline-content">
+                <span><a href="../author/oks/index.html">Oksana</a></span>
+                <span class="post-card-byline-date"><time datetime="2021-01-22">22 Jan 2021</time> <span class="bull">&bull;</span> 7 min read</span>
+            </div>
+        </footer>
+
+    </div>
+
+</article>
+        </div>
+    </div>
+</aside>
+
+
+
+
+        <footer class="site-footer outer">
+            <div class="site-footer-content inner">
+                <section class="copyright"><a href="https://lalal.ai/blog">LALAL.AI</a> &copy; 2021</section>
+                <nav class="site-footer-nav">
+                    <a href="https://lalal.ai/blog">Latest Posts</a>
+                    <a href="https://www.facebook.com/ghost" target="_blank" rel="noopener">Facebook</a>
+                    <a href="https://twitter.com/ghost" target="_blank" rel="noopener">Twitter</a>
+                </nav>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <script
+        src="../../../code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
+    <script src="../assets/built/casper48eb.js?v=1aa0b9f421"></script>
+
+    <script>
+        // Parse the URL parameter
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+
+        // Give the parameter a variable name
+        var action = getParameterByName('action');
+        var success = getParameterByName('success');
+
+        $(document).ready(function () {
+            if (action == 'subscribe' && (success === null || success === 'true')) {
+                $('body').addClass('subscribe-success');
+            }
+
+            if (action == 'subscribe' && success === 'false') {
+                $('body').addClass('subscribe-failure');
+            }
+
+            $('.subscribe-notification .subscribe-close-button').click(function () {
+                $('.subscribe-notification').addClass('close');
+            });
+
+            // Reset form on opening subscrion overlay
+            $('.subscribe-button').click(function() {
+                $('.subscribe-overlay form').removeClass();
+                $('.subscribe-email').val('');
+            });
+        });
+    </script>
+
+    <script>
+    $(document).ready(function () {
+        // FitVids - start
+        var $postContent = $(".post-full-content");
+        $postContent.fitVids();
+        // FitVids - end
+
+        // Replace nav with title on scroll - start
+        Casper.stickyNavTitle({
+            navSelector: '.site-nav-main',
+            titleSelector: '.post-full-title',
+            activeClass: 'nav-post-title-active'
+        });
+        // Replace nav with title on scroll - end
+
+        // Hover on avatar
+        var hoverTimeout;
+        $('.author-list-item').hover(function () {
+            var $this = $(this);
+
+            clearTimeout(hoverTimeout);
+
+            $('.author-card').removeClass('hovered');
+            $(this).children('.author-card').addClass('hovered');
+
+        }, function () {
+            var $this = $(this);
+
+            hoverTimeout = setTimeout(function () {
+                $this.children('.author-card').removeClass('hovered');
+            }, 800);
+        });
+    });
+</script>
+
+
+    <script src="../../../cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script>
+<script>
+mediumZoom('.post-content .kg-image-card img', { background: '#111' });
+mediumZoom('.post-content .kg-gallery-card img', { background: '#111' });
+</script>
+
+<style>
+.medium-zoom-overlay,
+.medium-zoom-image {
+  z-index: 100;
+}
+</style>
+
+</body>
+
+<!-- Mirrored from www.lalal.ai/blog/audio-processing-filter/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Nov 2021 15:56:12 GMT -->
+</html>
